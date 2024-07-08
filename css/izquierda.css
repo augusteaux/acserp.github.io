@@ -1,0 +1,51 @@
+#colizq {
+   float: left;
+	width: 0;
+	/* background: url(img/bkcolizq.png) no-repeat; */
+	min-height:487px;
+	position:relative;
+padding-top:10px;
+}
+
+#colizq p {
+	border:1px solid #2e366b;
+	border-top-style: none;
+	border-right-style:none;
+	border-bottom-style:solid;
+	border-left-style:none;
+	/* height:30px; */
+	padding-top:3px;
+	padding-bottom:6px;
+	font-size:12px;
+	font-weight:bold;	
+	display:block;
+	vertical-align:middle;
+	margin-bottom:3px;
+	/* background-image:url(img/fondobotizq.png);
+	background-repeat:repeat-y; */
+}
+#colizq a {
+	color:#2e366b;
+	text-decoration:none;
+	padding-bottom:2px;
+        padding-top:2px;
+	padding-left:17px;
+	display:block;
+}
+
+#colizq .boton:hover {
+	/* color:#CB5620;  naranja */
+	background-color:#2e366b;
+	background-image:none;
+	color:#FFFFFF;
+	
+}
+
+#prospectiva {
+	width: 148px;
+	margin:0 auto;
+	height:42px;
+	position:absolute;
+	bottom: -36px;
+	
+}

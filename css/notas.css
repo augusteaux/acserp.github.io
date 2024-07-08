@@ -1,0 +1,79 @@
+#contenido .fechanota {
+	background-color:#999999;
+	color:#EEEEEE !important;
+	padding:2px;
+	line-height:15px;
+	font-size:11px;
+	font-style:italic;
+	clear:left;
+}
+
+#contenido .fotonota {
+	float:left !important;
+	width:150px;
+	border:1px solid #666666;
+	margin-right:16px;
+	margin-bottom:8px;
+}
+
+#contenido .bajanota {
+	color:#666666;
+	font-family:Verdana, Geneva, sans-serif;
+	font-style:italic;
+	margin-bottom:24px;
+}
+
+
+#contenido .titulonota {
+	color:#2e366b;
+	font-family:Georgia, "Times New Roman", Times, serif;;
+	font-weight:bold;
+	font-size:16px;
+
+}
+
+#contenido a .titulonota:hover {
+	color:#2e366b;
+	font-family:Georgia, "Times New Roman", Times, serif;;
+	font-weight:bold;
+	font-size:16px;
+	text-decoration:underline !important;
+
+}
+
+#barranoticias {
+	background-color:#666;
+	padding:2px;
+}
+
+#barranoticias .paginaactual {
+	color:#000 !important;
+	font-family:Georgia, "Times New Roman", Times, serif;;
+	font-size:14px !important;
+	margin-left:3px;
+	margin-right:3px;
+	}
+
+#barranoticias a {
+	font-family:Georgia, "Times New Roman", Times, serif;;
+	font-size:11px;
+	color:#FFF !important;
+	background-color:transparent !important;
+	font-weight:bold;
+	margin-left:2px;
+	margin-right:2px;
+}
+
+#barranoticias a:hover{
+	color:#2e366b !important;
+	background-color:transparent !important;
+}
+
+#barranoticias .nosale {
+	font-family:Georgia, "Times New Roman", Times, serif;;
+	font-size:11px;
+	color:#999 !important;
+	background-color:transparent !important;
+	margin-left:2px;
+	margin-right:2px;
+}

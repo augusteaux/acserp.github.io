@@ -1,0 +1,64 @@
+#colder {
+    float: left;	
+	width: 144px;
+	position: relative;
+	padding-top:12px;
+		z-index:0;
+}
+
+#colder p {
+	border-bottom: 1px solid #2e366b;
+	margin-bottom: 6px;
+        
+	
+	
+}
+
+#colder a {
+	text-decoration:none;
+	color:#2e366b;
+	display:block;
+	
+	padding-right: 17px;
+	text-align:right;
+	font-size:12px;
+	line-height:16px;
+	margin-bottom:6px;
+	z-index:0;
+	font-weight:bold;
+}
+
+#colder a.nivel1 {
+	font-size:14px;
+	line-height:19px;
+	margin-bottom:8px;
+	font-weight:bold;
+}
+
+
+#colder a:hover {
+	background-color:#2e366b;
+	color:#FFF;
+}
+
+#redes_sociales {
+	
+height:22px;
+padding-bottom: 5px;
+margin-bottom: 10px;
+
+	
+}
+
+#redes_sociales img {
+	
+float:right;
+margin-left:6px;
+	
+}
+
+#redes_sociales a:hover {
+	
+opacity:0.7;
+	
+}

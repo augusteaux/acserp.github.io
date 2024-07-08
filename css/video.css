@@ -1,0 +1,98 @@
+.videotitulo {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	background-color:#FFFFFF;
+	float:left;
+	width:170px;
+}
+
+.videomedio {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	background-color:#FFFFFF;
+	float:left;
+	width:50px;
+}
+
+.videocodigo {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	background-color:#FFFFFF;
+	float:left;
+	width:70px;
+}
+
+.videoresumen {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	background-color:#FFFFFF;
+	float:left;
+	width:305px;
+}
+
+.videocoldur {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	background-color:#FFFFFF;
+	float:left;
+	width:105px;
+}
+
+.videotituloh {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	background-color:#999;
+	color:#000000;
+	float:left;
+	width:170px;
+}
+
+.videomedioh {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	background-color:#999;
+	color:#000000;
+	background-color:#FFFFFF;
+	float:left;
+	width:50px;
+}
+
+.videocodigoh {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	background-color:#999;
+	color:#000000;
+	background-color:#FFFFFF;
+	float:left;
+	width:70px;
+}
+
+.videoresumenh {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	background-color:#999;
+	color:#000000;
+	background-color:#FFFFFF;
+	float:left;
+	width:305px;
+}
+
+.videocoldurh {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	background-color:#999;
+	color:#000000;
+	background-color:#FFFFFF;
+	float:left;
+	width:105px;
+}

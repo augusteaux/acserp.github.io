@@ -1,0 +1,105 @@
+#menu {
+	float:left;
+	height:27px;
+	background:#2e366b;/* url(img/bkmenu.png) repeat-y;*/
+	width:1000px;
+	z-index:800;
+padding-top:2px;
+}
+#menu ul {
+	list-style-type:none;
+	margin:0;
+	left:0;
+	padding:0;
+	background-color:#2e366b;
+	
+}
+#menu li {
+	float:left;
+	position:relative;
+	padding-top:10px;
+	padding-bottom:8px;
+	width:170px;
+	-moz-transition:all .4s;
+	-webkit-transition:all .4s;
+	-o-transition:all .4s;
+	transition:all .4s;
+	font-size:11px !important;
+	font-weight:600;
+	border-right:1px solid #21295f;
+        
+}
+#menu li:hover {
+	background-color:#549eb9;
+	color:#E0E0E0;
+}
+#menu ul a {
+	padding-top:0;
+	margin-top:0;
+	padding-right:20px;
+	padding-left:20px;
+	display:block;
+	line-height:29px;
+	text-decoration:none;
+	line-height:14px;
+	color:#fff;
+	background-image:none;
+}
+.sinfilete {
+	border:none;
+}
+
+
+
+#menu ul li:hover>ul {
+	display: block;
+}
+
+#menu ul ul {/* Segundo nivel */
+	display:none;
+	position:absolute;
+	left:20px;
+	top:29px;/* Esto hubo que modificar para que ande en 2 lin. era 29 */
+	height:auto;
+	width:170px;
+	float:inherit;
+	z-index:900;
+	font-size:12px !important;
+	border-left:#549eb9 2px solid;
+	padding-top:4px;
+	-webkit-box-shadow:0 0 7px rgba(0,0,0,0.08);
+	-moz-box-shadow:0 0 7px rgba(0,0,0,0.08);
+	box-shadow:0 0 7px rgba(0,0,0,0.08);
+}
+
+#menu ul ul li {/* Segundo nivel */
+	font-size:12px !important;
+	padding-top:3px;
+	padding-bottom:3px;
+	border-right:none;
+}
+
+#menu ul li ul li:hover>ul {
+	display: block;
+}
+
+#menu ul ul ul {/* Tercer nivel */
+	display:none;
+	position:absolute;
+	left:80px;
+	top:16px;
+	height:auto;
+	float:inherit;
+	z-index:900;
+	border-left:#549eb9 2px solid;
+	padding-top:4px;
+	-webkit-box-shadow:0 0 7px rgba(0,0,0,0.08);
+	-moz-box-shadow:0 0 7px rgba(0,0,0,0.08);
+	box-shadow:0 0 7px rgba(0,0,0,0.08);
+}
+
+#menu ul li ul li a {
+	display:block;
+	border-right:none;
+	padding-bottom: 4px;
+}
