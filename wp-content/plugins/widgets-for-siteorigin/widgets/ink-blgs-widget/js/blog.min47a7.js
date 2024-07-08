@@ -1,1 +1,1 @@
-
+!function(e){e.fn.iwInitBlog=function(){e(".iw-so-blog").length&&e(".iw-so-blog .iw-so-blog-equal-height").each(function(){e(this).find(".iw-so-article").matchHeight({byRow:!1,property:"height",target:null,remove:!1})})}}(jQuery),jQuery(function(e){var t,i,n,o;e(document).iwInitBlog(),t=document.body,i=function(){e(document).iwInitBlog()},o=t.clientHeight,function e(){n=t.clientHeight,o!=n&&i(),o=n,t.onElementHeightChangeTimer&&clearTimeout(t.onElementHeightChangeTimer),t.onElementHeightChangeTimer=setTimeout(e,200)}()});
