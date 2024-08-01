@@ -301,13 +301,13 @@ div.copyright-bar {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil de Instagram</title>
+    <title></title>
     <style>
-    	body
+    	body{
     	 justify-content: center;
     	 width="100%" 
     	 height="800"
-
+			}
 
         .instagram-profile {
             background-color: #fff;
@@ -371,8 +371,8 @@ div.copyright-bar {
         }
 
         .profile-posts iframe {
-            width: 200%;
-            height: 300px;
+            width: 400%;
+            height: 500px;
             border: none;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -395,14 +395,139 @@ div.copyright-bar {
     </div>
 </body>
 <hr />
+<div class="entry-content" itemprop="text">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de TikTok</title>
+    <style>
+        body {
+     		 justify-content: center;
+    		 width="100%" 
+    		 height="800"
+        }
+
+        .atiktok-profile {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: 20px;
+        }
+
+        .aprofile-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .aprofile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            border: 3px solid #eee;
+        }
+
+        .aprofile-info {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .aprofile-info img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #eee;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .aprofile-name {
+            margin: 0;
+            font-size: 1.5em;
+            color: #333;
+            text-align: center;
+        }
+
+        .aprofile-bio {
+            margin: 10px 0;
+            color: #666;
+            text-align: center;
+        }
+
+        .aprofile-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #25f4ee;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            display: block;
+            width: 100px;
+            margin: 10px auto;
+        }
+
+        .aprofile-link:hover {
+            background-color: #1da1f2;
+        }
+
+        .aprofile-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+        }
+
+        .aprofile-posts iframe {
+            width: 100%;
+            height: 750px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+            .aprofile-pic, .aprofile-info img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .aprofile-name {
+                font-size: 1.2em;
+            }
+
+            .aprofile-link {
+                width: auto;
+            }
+
+            .aprofile-posts iframe {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
 <body>
-    <div class="tiktok-profile-embed">
-        <iframe src="https://www.tiktok.com/embed/@modeloonulp" width="100%" height="500" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
+    <div class="tiktok-profile">
+                <h1 class="aprofile-name">@modeloonulp</h1>
+                <p class="aprofile-bio">Todo el detrás de escenas
+del Modelo ONU La Plata 😜
+
+Modelo público y gratuito</p>
+                <a href="https://www.tiktok.com/@modeloonulp" class="aprofile-link" target="_blank">Tik Tok</a>
+            </div>
+        </div>
+        <div class="aprofile-posts">
+            <iframe src="https://www.tiktok.com/embed/v2/7388343842455424261" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.tiktok.com/embed/v2/7387211832840178949" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.tiktok.com/embed/v2/7386471763229691142" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 </body>
-		</div>
-</article>
-		</main>
 	</div>
 	</div>
 </div>
