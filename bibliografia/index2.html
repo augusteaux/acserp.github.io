@@ -293,27 +293,171 @@ div.copyright-bar {
 		<main class="site-main" id="main">
 <strong><h12><center></center></h12></strong>
 <hr />
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reproductor de Video</title>
+    <title>Hover Grid</title>
     <style>
-        .video-container {
-            max-width: 800px;
-            width: 100%;
-            background-color: #000;
+        body {
+            font-family: Arial, sans-serif;
+     				 justify-content: center;
+    				 width="100%" 
+    				 height="800"
+            padding: 20px;
+            box-sizing: border-box;
         }
-        video {
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
             width: 100%;
-            height: auto;
+            max-width: 800px;
+        }
+
+        .grid-item {
+            background-color: #ccc;
+            padding: 100px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+            transition: background-color 0.3s;
+        }
+
+        .grid-item:hover {
+            background-color: #999;
+        }
+
+        .info {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .grid-item.active .info {
+            max-height: 800px; /* Ajusta este valor según la cantidad de contenido */
+        }
+
+        .color1 { background-color: #FFCDD2; }
+        .color2 { background-color: #F8BBD0; }
+        .color3 { background-color: #E1BEE7; }
+        .color4 { background-color: #D1C4E9; }
+        .color5 { background-color: #C5CAE9; }
+        .color6 { background-color: #BBDEFB; }
+        .color7 { background-color: #B3E5FC; }
+        .color8 { background-color: #B2EBF2; }
+        .color9 { background-color: #B2DFDB; }
+        .color10 { background-color: #C8E6C9; }
+        .color11 { background-color: #DCEDC8; }
+        .color12 { background-color: #F0F4C3; }
+        .color13 { background-color: #FFF9C4; }
+        .color14 { background-color: #FFECB3; }
+        .color15 { background-color: #FFE0B2; }
+
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            .grid-item {
+                padding: 15px;
+            }
+
+            .grid-item.active .info {
+                max-height: 600px; /* Ajusta este valor según la cantidad de contenido */
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 800px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .grid-item.active .info {
+                max-height: 800px; /* Ajusta este valor según la cantidad de contenido */
+            }
         }
     </style>
 </head>
 <body>
-    <div class="video-container">
-        <video controls>
-            <source src="../video/mandarinas.mp4" type="video/mp4">
-        </video>
+    <div class="grid-container">
+        <div class="grid-item color1">
+            <p>Asamblea General</p>
+            <div class="info">La Asamblea General de las Naciones Unidas (AGNU) es el principal órgano deliberativo y representativo de la ONU, donde se reúnen los 193 Estados Miembros. Cada año, la AGNU se reúne en sesiones ordinarias y, cuando es necesario, en sesiones especiales o de emergencia, proporcionando un foro para el diálogo multilateral sobre los problemas más importantes y urgentes del mundo.
+La AGNU tiene el mandato de discutir y hacer recomendaciones sobre cuestiones de paz y seguridad, desarrollo, derechos humanos, derecho internacional y cooperación internacional. Además, desempeña un papel fundamental en la supervisión y promoción de los Objetivos de Desarrollo Sostenible (ODS) de la Agenda 2030. La Asamblea General adopta resoluciones que, aunque no son vinculantes, reflejan la voluntad colectiva de la comunidad internacional y establecen normas y principios que guían la acción de los Estados y otros actores internacionales en la búsqueda de soluciones pacíficas y sostenibles a los desafíos globales.</div>
+        </div>
+        <div class="grid-item color2">
+            <p>Casillero 2</p>
+            <div class="info">Más información del Casillero 2</div>
+        </div>
+        <div class="grid-item color3">
+            <p>Casillero 3</p>
+            <div class="info">Más información del Casillero 3</div>
+        </div>
+        <div class="grid-item color4">
+            <p>Casillero 4</p>
+            <div class="info">Más información del Casillero 4</div>
+        </div>
+        <div class="grid-item color5">
+            <p>Casillero 5</p>
+            <div class="info">Más información del Casillero 5</div>
+        </div>
+        <div class="grid-item color6">
+            <p>Casillero 6</p>
+            <div class="info">Más información del Casillero 6</div>
+        </div>
+        <div class="grid-item color7">
+            <p>Casillero 7</p>
+            <div class="info">Más información del Casillero 7</div>
+        </div>
+        <div class="grid-item color8">
+            <p>Casillero 8</p>
+            <div class="info">Más información del Casillero 8</div>
+        </div>
+        <div class="grid-item color9">
+            <p>Casillero 9</p>
+            <div class="info">Más información del Casillero 9</div>
+        </div>
+        <div class="grid-item color10">
+            <p>Casillero 10</p>
+            <div class="info">Más información del Casillero 10</div>
+        </div>
+        <div class="grid-item color11">
+            <p>Casillero 11</p>
+            <div class="info">Más información del Casillero 11</div>
+        </div>
+        <div class="grid-item color12">
+            <p>Casillero 12</p>
+            <div class="info">Más información del Casillero 12</div>
+        </div>
+        <div class="grid-item color13">
+            <p>Casillero 13</p>
+            <div class="info">Más información del Casillero 13</div>
+        </div>
+        <div class="grid-item color14">
+            <p>Casillero 14</p>
+            <div class="info">Más información del Casillero 14</div>
+        </div>
+        <div class="grid-item color15">
+            <p>Casillero 15</p>
+            <div class="info">Más información del Casillero 15</div>
+        </div>
     </div>
+
+    <script>
+        document.querySelectorAll('.grid-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 <hr />
 			</div>
