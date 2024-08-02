@@ -300,20 +300,23 @@ div.copyright-bar {
     <style>
         body {
             font-family: Arial, sans-serif;
-     				 justify-content: center;
-    				 width="100%" 
-    				 height="800"
+    				justify-content: center;
+				    align-items: center;    				
+    				width="100px" 
+    				height="800px"
             padding: 20px;
             box-sizing: border-box;
         }
 
         .grid-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
             width: 100%;
             max-width: 800px;
-        }
+            margin: 0 auto;
+          }
 
         .grid-item {
             background-color: #ccc;
@@ -336,32 +339,32 @@ div.copyright-bar {
             transition: max-height 0.3s ease-out;
             background-color: rgba(0, 0, 0, 0.8);
             color: #fff;
-            padding: 20px;
+            padding: 0px;
             margin-top: 10px;
-            border-radius: 5px;
+            border-radius: 15px;
         }
 
         .grid-item.active .info {
-            max-height: 800px; /* Ajusta este valor según la cantidad de contenido */
+            max-height: 1200px; /* Ajusta este valor según la cantidad de contenido */
         }
 
-        .color1 { background-color: #FFCDD2; }
-        .color2 { background-color: #F8BBD0; }
-        .color3 { background-color: #E1BEE7; }
-        .color4 { background-color: #D1C4E9; }
-        .color5 { background-color: #C5CAE9; }
-        .color6 { background-color: #BBDEFB; }
-        .color7 { background-color: #B3E5FC; }
-        .color8 { background-color: #B2EBF2; }
-        .color9 { background-color: #B2DFDB; }
-        .color10 { background-color: #C8E6C9; }
-        .color11 { background-color: #DCEDC8; }
-        .color12 { background-color: #F0F4C3; }
-        .color13 { background-color: #FFF9C4; }
-        .color14 { background-color: #FFECB3; }
-        .color15 { background-color: #FFE0B2; }
+        .color1 { background-color: #ef3c03; }
+        .color2 { background-color: #03e1f5; }
+        .color3 { background-color: #06bf24; }
+        .color4 { background-color: #871e90; }
+        .color5 { background-color: #3bcdbd; }
+        .color6 { background-color: #c9d146; }
+        .color7 { background-color: #cc44e4; }
+        .color8 { background-color: #c89531; }
+        .color9 { background-color: #a57925; }
+        .color10 { background-color: #767676; }
+        .color11 { background-color: #4e5dd3; }
+        .color12 { background-color: #dfbb59; }
+        .color13 { background-color: #b74c4c; }
+        .color14 { background-color: #457735; }
+        .color15 { background-color: #455141; }
 
-        @media (max-width: 600px) {
+        @media (max-width: 800px) {
             .grid-container {
                 grid-template-columns: 1fr;
             }
@@ -371,7 +374,7 @@ div.copyright-bar {
             }
 
             .grid-item.active .info {
-                max-height: 600px; /* Ajusta este valor según la cantidad de contenido */
+                max-height: 800px; /* Ajusta este valor según la cantidad de contenido */
             }
         }
 
@@ -394,60 +397,75 @@ div.copyright-bar {
 La AGNU tiene el mandato de discutir y hacer recomendaciones sobre cuestiones de paz y seguridad, desarrollo, derechos humanos, derecho internacional y cooperación internacional. Además, desempeña un papel fundamental en la supervisión y promoción de los Objetivos de Desarrollo Sostenible (ODS) de la Agenda 2030. La Asamblea General adopta resoluciones que, aunque no son vinculantes, reflejan la voluntad colectiva de la comunidad internacional y establecen normas y principios que guían la acción de los Estados y otros actores internacionales en la búsqueda de soluciones pacíficas y sostenibles a los desafíos globales.</div>
         </div>
         <div class="grid-item color2">
-            <p>Casillero 2</p>
-            <div class="info">Más información del Casillero 2</div>
+            <p>Sala de Tratados Intenacionales</p>
+            <div class="info">La Sala de Tratados Internacionales de las Naciones Unidas es un espacio crucial para la diplomacia global, donde representantes de los Estados miembros se reúnen para negociar y acordar tratados internacionales. Esta sala sirve como el centro neurálgico para las conversaciones diplomáticas que buscan resolver problemas globales y establecer marcos normativos internacionales. 
+Aquí se llevan a cabo sesiones donde se debate y se consensúa sobre acuerdos que abarcan una amplia gama de temas, desde el cambio climático y el desarme hasta los derechos humanos y el comercio. La sala no solo facilita la discusión y el entendimiento mutuo entre los países, sino que también actúa como un foro para formalizar compromisos internacionales. A través de estas negociaciones, se promueve la cooperación y se busca alcanzar soluciones consensuadas que puedan ser implementadas a nivel global, fortaleciendo así la colaboración entre naciones y avanzando en el desarrollo de un orden internacional basado en reglas.</div>
         </div>
         <div class="grid-item color3">
-            <p>Casillero 3</p>
-            <div class="info">Más información del Casillero 3</div>
+            <p>Consejo Económico y Social</p>
+            <div class="info">El Consejo Económico y Social de las Naciones Unidas (ECOSOC) es el órgano principal encargado de coordinar la labor económica y social de la ONU y sus organismos especializados. Fundado en 1946, el ECOSOC facilita el diálogo y la cooperación entre los Estados Miembros y diversos actores de la sociedad civil, el sector privado y las instituciones académicas para abordar los desafíos globales.
+
+La misión del ECOSOC es promover el desarrollo económico, el progreso social y el mejoramiento de los niveles de vida en todo el mundo. Entre sus principales funciones se encuentran la elaboración de políticas, la revisión de tendencias y el análisis de datos, así como la coordinación de esfuerzos internacionales para alcanzar los Objetivos de Desarrollo Sostenible (ODS). Anualmente, el ECOSOC organiza el Foro Político de Alto Nivel sobre el Desarrollo Sostenible, donde se revisa el progreso en la implementación de la Agenda 2030 y se fomenta la cooperación internacional para un desarrollo inclusivo y sostenible.</div>
         </div>
         <div class="grid-item color4">
-            <p>Casillero 4</p>
-            <div class="info">Más información del Casillero 4</div>
+            <p>Oficina de ONU Mujeres</p>
+            <div class="info">ONU Mujeres tiene como misión principal promover la igualdad de género y el empoderamiento de las mujeres en todo el mundo. Su objetivo es garantizar que todas las mujeres y niñas puedan ejercer sus derechos plenamente y participar equitativamente en la vida política, económica y social. La organización se enfoca en erradicar la violencia de género, promover la igualdad salarial y el acceso equitativo a educación y salud, y asegurar una mayor representación femenina en todos los niveles de toma de decisiones.
+ONU Mujeres trabaja con gobiernos, organizaciones no gubernamentales y otras entidades para desarrollar y aplicar políticas que avancen en estos objetivos. La entidad también proporciona apoyo técnico y financiero a proyectos y programas destinados a mejorar la vida de las mujeres y a fortalecer su capacidad para exigir y defender sus derechos. Su misión es transformar las normas sociales y los sistemas que perpetúan la desigualdad y la discriminación, promoviendo un entorno global donde se respeten y valoren por igual los derechos de todos.</div>
         </div>
         <div class="grid-item color5">
-            <p>Casillero 5</p>
-            <div class="info">Más información del Casillero 5</div>
+            <p>Programa para el Medio Ambiente</p>
+            <div class="info">El Programa de las Naciones Unidas para el Medio Ambiente (PNUMA) es la principal agencia de la ONU encargada de coordinar las actividades ambientales globales. Fundado en 1972, el PNUMA promueve la sostenibilidad ambiental integrando políticas y prácticas en la gestión de recursos naturales y la protección del entorno. Su misión es fomentar la cooperación internacional y proporcionar liderazgo en temas ambientales clave, como el cambio climático, la degradación de tierras y la biodiversidad.
+El PNUMA trabaja para fortalecer la capacidad de los países para abordar desafíos ambientales mediante la creación de normas y políticas, la promoción de la investigación y la divulgación de información. A través de sus iniciativas, el PNUMA busca apoyar la implementación de acuerdos internacionales y movilizar recursos para enfrentar crisis ambientales, contribuyendo así a la conservación del planeta y al desarrollo sostenible.</div>
         </div>
         <div class="grid-item color6">
-            <p>Casillero 6</p>
-            <div class="info">Más información del Casillero 6</div>
+            <p>Organización Mundial de la Salud</p>
+            <div class="info">La Organización Mundial de la Salud (OMS) es el organismo especializado de las Naciones Unidas encargado de liderar la respuesta global en salud pública. Fundada en 1948, la OMS tiene como misión promover el bienestar físico y mental de todos los pueblos a través de la cooperación internacional en salud, el establecimiento de normas y estándares, y la coordinación de respuestas a emergencias sanitarias. Su labor incluye la vigilancia y prevención de enfermedades, el fortalecimiento de los sistemas de salud, y la promoción de políticas de salud eficaces. La OMS también juega un papel crucial en la investigación y la respuesta a emergencias sanitarias globales, como pandemias. Su objetivo es garantizar el acceso equitativo a servicios de salud de calidad y mejorar las condiciones de vida en todo el mundo, trabajando en estrecha colaboración con gobiernos y organizaciones no gubernamentales.</div>
         </div>
         <div class="grid-item color7">
-            <p>Casillero 7</p>
-            <div class="info">Más información del Casillero 7</div>
+            <p>Consejo de Seguridad</p>
+            <div class="info">El Consejo de Seguridad de las Naciones Unidas (CSNU) es el órgano encargado de mantener la paz y la seguridad internacionales. Fundado en 1945, está compuesto por 15 miembros, de los cuales cinco son permanentes (China, Francia, Rusia, el Reino Unido y Estados Unidos) y diez son miembros no permanentes elegidos por la Asamblea General por un período de dos años.
+La misión del CSNU incluye la prevención de conflictos, la supervisión de la implementación de sanciones y el establecimiento de operaciones de mantenimiento de la paz. Tiene la autoridad para adoptar resoluciones vinculantes que obligan a los Estados Miembros a cumplir con sus decisiones. El Consejo también puede autorizar el uso de la fuerza en situaciones de amenaza a la paz. Su labor es esencial para abordar crisis internacionales y promover la estabilidad global, jugando un papel crucial en la diplomacia y la resolución de conflictos.</div>
         </div>
         <div class="grid-item color8">
-            <p>Casillero 8</p>
-            <div class="info">Más información del Casillero 8</div>
+            <p>Consejo de Derechos Humanos</p>
+            <div class="info">El Consejo de Derechos Humanos (CDH) de la ONU es el principal órgano encargado de la promoción y protección de los derechos humanos a nivel global. Su labor se centra en examinar y abordar las violaciones de derechos humanos mediante el Examen Periódico Universal (EPU), que evalúa el cumplimiento de los derechos en todos los países miembros. El CDH puede crear comisiones de investigación y emitir resoluciones para abordar situaciones de crisis y violaciones graves. Además, supervisa la implementación de tratados internacionales de derechos humanos y fomenta el diálogo entre Estados y la sociedad civil para fortalecer los mecanismos de protección y promoción de los derechos fundamentales.</div>
         </div>
         <div class="grid-item color9">
-            <p>Casillero 9</p>
-            <div class="info">Más información del Casillero 9</div>
+            <p>Organización para la Educación, Ciencia y Cultura</p>
+            <div class="info">La Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura (UNESCO) es el organismo dedicado a perseguir el establecimiento de la paz mediante la cooperación internacional en los ámbitos de la educación, la ciencia, la cultura y la comunicación e información. Los programas de la UNESCO contribuyen al logro de los Objetivos de Desarrollo Sostenible (ODS) fijados en la Agenda 2030.
+A raíz de dos guerras mundiales desencadenadas en menos de 30 años, la UNESCO nació en 1945 con una visión sólidamente arraigada:los acuerdos económicos y políticos entre los Estados no bastan para construir una paz duradera, sino que es preciso unir a los pueblos mediante el  diálogo entre las culturas y el entendimiento mutuo.</div>
         </div>
         <div class="grid-item color10">
-            <p>Casillero 10</p>
-            <div class="info">Más información del Casillero 10</div>
+            <p>Comisión de Asuntos Jurídicos</p>
+            <div class="info">La Comisión de Asuntos Jurídicos es el principal foro para considerar  cuestiones legales en las Naciones Unidas. La Carta de la ONU en su Preámbulo, marcó un objetivo: «crear condiciones bajo las cuales puedan mantenerse la justicia y el respeto a las obligaciones emanadas de los tratados y de otras fuentes del derecho internacional». Desde entonces, el desarrollo del derecho internacional y el respeto por el mismo han sido elementos claves del trabajo de la Organización.
+Otros puntos en la agenda de la Comisión incluyen la responsabilidad penal de los funcionarios Naciones Unidas en misión; el estado de derecho en los planos nacional e internacional; la administración de justicia en las Naciones Unidas; la situación de los Protocolos de los Convenios de Ginebra relativos a la protección de las víctimas de los conflictos armados; y las medidas para mejorar la protección de las misiones y los representantes diplomáticos y consulares.</div>
         </div>
         <div class="grid-item color11">
-            <p>Casillero 11</p>
-            <div class="info">Más información del Casillero 11</div>
+            <p>Alto Comisionado de la ONU para los Refugiados</p>
+            <div class="info">El Alto Comisionado de las Naciones Unidas para los Refugiados (ACNUR) es el organismo de las Naciones Unidas encargado de proteger a los refugiados y desplazados por persecuciones o conflictos, y promover soluciones duraderas a su situación mediante el reasentamiento voluntario.
+La misión del ACNUR es garantizar que todas las personas tengan derecho a buscar asilo y encontrar un refugio seguro en otro Estado, con la opción de regresar eventualmente a su hogar, integrarse o reasentarse. Este derecho permite satisfacer necesidades básicas, como el acceso a una vivienda digna, una alimentación adecuada, agua potable, entre otros derechos inherentes a la persona que deberian ser garantizados en los Estados de origen, pero se ven limitados por diversos problemas o conflictos como la guerra, la violencia y/o la persecución.</div>
         </div>
         <div class="grid-item color12">
-            <p>Casillero 12</p>
-            <div class="info">Más información del Casillero 12</div>
+            <p>Fondo de la ONU para la Infancia</p>
+            <div class="info">El Fondo de las Naciones Unidas para la Infancia (UNICEF) es una agencia de las Naciones Unidas que provee ayuda humanitaria y desarrollo a niños y madres en países en desarrollo. La base sobre la que guía su trabajo es la Convención sobre los Derechos del Niño y su labor está centrada en cinco esferas prioritarias de trabajo: supervivencia y desarrollo infantil, educación e igualdad de género, la infancia y el VIH/sida, protección infantil y promoción de políticas y alianzas.
+La UNICEF es la fuerza impulsora que contribuye a la creación de un mundo donde se respeten los derechos de todos y cada uno de los niños y niñas. Fue creado con el propósito de colaborar con otros para superar los obstáculos impuestos a la niñez por la pobreza, la violencia, la enfermedad y discriminación.</div>
         </div>
         <div class="grid-item color13">
-            <p>Casillero 13</p>
-            <div class="info">Más información del Casillero 13</div>
+            <p>Organización Internacional del Trabajo</p>
+            <div class="info">La Organización Internacional del Trabajo (OIT) es un organismo especializado de las Naciones Unidas que se ocupa de los asuntos relativos al trabajo y las relaciones laborales. Fue fundada con el doble objetivo de lograr la expansión global de los derechos de los trabajadores y atenuar las causas de las revoluciones obreras que sacudieron fundamentalmente a algunos de los países involucrados en la Primera Guerra Mundial.
+La OlT está consagrada a la promoción de la justicia social, de los derechos humanos y laborales reconocidos internacionalmente, persiguiendo su misión fundadora:
+la justicia social es esencial para la paz universal y permanente.</div>
         </div>
         <div class="grid-item color14">
-            <p>Casillero 14</p>
-            <div class="info">Más información del Casillero 14</div>
+            <p>Oficina contra la Droga y el Delito</p>
+            <div class="info">La Oficina de las Naciones Unidas contra la Droga y el Delito (UNODC) es la agencia de las Naciones Unidas que tiene como objetivo la lucha contra las drogas ilícitas y la delincuencia internacional, además de estar encargada de ejecutar el programa principal de las Naciones Unidas contra el terrorismo.
+El objetivo primordial de UNODC, es contribuir con los Estados a enfrentar las amenazas que ponen en riesgo la gobernabilidad, la estabilidad social y atentan contra las condiciones básicas necesarias para avanzar en el desarrollo humano de nuestros pueblos. Para las Naciones Unidas se trata de cuestiones totalmente prioritarias que requieren iniciativas coordinadas a nivel nacional, regional e internacional para afrontarlas.</div>
         </div>
         <div class="grid-item color15">
-            <p>Casillero 15</p>
-            <div class="info">Más información del Casillero 15</div>
+            <p>Comité Especial de Descolonización</p>
+            <div class="info">El Comité Especial de Descolonización (CED) es un organismo creado en 1961, encargado de monitorear e impulsar el proceso de descolonización de los territorios no autónomos bajo administración de potencias, con el propósito de poner fin al colonialismo.
+De conformidad con la resolución 1654 (XVI) de la Asamblea General, la misión del Comité consiste en: examinar la aplicación de la Declaración sobre la Concesión de la Independencia a los Países y Pueblos Coloniales y formular sugerencias y recomendaciones sobre los progresos y el alcance de la aplicación de la Declaración.
+Asimismo, el CED revisa anualmente la lista de Territorios No Autónomos a los que se aplica la Declaración</div>
         </div>
     </div>
 
