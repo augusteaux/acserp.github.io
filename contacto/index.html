@@ -400,127 +400,9 @@ div.copyright-bar {
 </body>
 
 <hr />
-<div class="entry-content" itemprop="text">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <style>
-        body {
-     		 justify-content: center;
-    		 width="100%" 
-    		 height="800"
-        }
-
-        .atiktok-profile {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            width: 90%;
-            max-width: 600px;
-            padding: 20px;
-            box-sizing: border-box;
-            margin: 20px;
-        }
-
-        .aprofile-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-
-        .aprofile-pic {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-right: 20px;
-            border: 3px solid #eee;
-        }
-
-        .aprofile-info {
-            flex: 1;
-            min-width: 200px;
-            text-align: center;
-        }
-
-        .aprofile-info img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            border: 3px solid #eee;
-            display: block;
-            margin: 0 auto 10px;
-        }
-
-        .aprofile-name {
-            margin: 0;
-            font-size: 1.5em;
-            color: #333;
-            text-align: center;
-        }
-
-        .aprofile-bio {
-            margin: 10px 0;
-            color: #666;
-            text-align: center;
-        }
-
-        .aprofile-link {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #25f4ee;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            text-align: center;
-            display: block;
-            width: 100px;
-            margin: 10px auto;
-        }
-
-        .aprofile-link:hover {
-            background-color: #1da1f2;
-        }
-
-        .aprofile-posts {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 10px;
-        }
-
-        .aprofile-posts iframe {
-            width: 75%;
-            height: 738px;
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        @media (max-width: 600px) {
-            .aprofile-pic, .aprofile-info img {
-                width: 100px;
-                height: 100px;
-            }
-
-            .aprofile-name {
-                font-size: 1.5em;
-            }
-
-            .aprofile-link {
-                width: auto;
-            }
-
-            .aprofile-posts iframe {
-                height: 200px;
-            }
-        }
-    </style>
-</head>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video de YouTube con Botón</title>
     <style>
         body {
             flex-direction: column;
@@ -568,16 +450,84 @@ div.copyright-bar {
     </div>
 </body>
 <hr>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .content-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .tiktok-profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-name {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+        .profile-bio {
+            font-size: 1em;
+            color: #666;
+        }
+        .profile-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #1da1f2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .profile-link:hover {
+            background-color: #0d8ddf;
+        }
+        .aprofile-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+        }
+        .aprofile-posts iframe {
+            width: 85%;
+            height: 738px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 630px) {
+            .aprofile-posts iframe {
+                display: none;
+            }
+            .aprofile-posts iframe:first-child {
+                display: block;
+                height: 738px; 
+                width: 98%;
+								border: none;
+           	 		border-radius: 10px;
+            		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+        }
+    </style>
+</head>
 <body>
-    <div class="tiktok-profile">
-                <h1 class="profile-name">@modeloonulp</h1>
-                <p class="profile-bio">Todo el detrás de escenas
-del Modelo ONU La Plata 
-
-Modelo público y gratuito</p>
-                <a href="https://www.tiktok.com/@modeloonulp" class="profile-link" target="_blank">Tik Tok</a>
-                <hr>
-            </div>
+    <div class="content-container">
+        <div class="tiktok-profile">
+            <h1 class="profile-name">@modeloonulp</h1>
+            <p class="profile-bio">Todo el detrás de escenas del Modelo ONU La Plata<br>Modelo público y gratuito</p>
+            <a href="https://www.tiktok.com/@modeloonulp" class="profile-link" target="_blank">Tik Tok</a>
+            <hr>
         </div>
         <div class="aprofile-posts">
             <iframe src="https://www.tiktok.com/embed/v2/7388343842455424261" frameborder="0" allowfullscreen></iframe>
